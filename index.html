@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nuvo Store · Próximamente</title>
+<meta name="description" content="Nuvo Store — catálogo en línea en Costa Rica. Próximamente.">
+<link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNDYuMTUgMTQ2LjI4Ij48cGF0aCBmaWxsPSIjNzdGRjAwIiBkPSJNMTE4LjI2LjJMMjkuOTcsMEMxMy4wMi0uMDQuMDgsMTMuMzUuMDcsMzAuMTRMMCwxMTUuNzJjLS4wMSwxNS4yNCwxMC45NSwzMC40NiwyNy4xOCwzMC40OGw5MC43Ny4wOWMxNS43OS4wMiwyOC4wNi0xMy4zMywyOC4wOC0yOC41NGwuMTItODguMzNjLjAyLTE1LjQzLTEyLjIzLTI5LjE4LTI3Ljg5LTI5LjIyWk0xMDQuNTMsMTA4LjkzbC0yMS4zNi4wMi0uMDMtNDcuNTZjLS4xNy0zLjA0LTEuOTctNC42Ny00LjU1LTQuNjdoLTExLjExYy0yLjU4LjAxLTQuNjcsMi4xMS00LjY3LDQuNjl2NDcuNTRzLTE2LjM4LS4wMS0xNi4zOC0uMDFjLTIuNjYsMC00LjgxLTIuMTYtNC44Mi00Ljgydi00OC40NGMwLTEwLjEzLDguMjEtMTguMzQsMTguMzQtMTguMzNoMjEuNDhjOC45MS4wMiwxNy4yMSw1LjA1LDIwLjksMTMuMTcsMS4wNywyLjM2LDEuNzksNC45MiwyLjEsNy42MS4wOS43Ni4xMSwxLjUyLjExLDIuMjl2NDguNTNaIi8+PC9zdmc+">
+<meta property="og:title" content="Nuvo Store">
+<meta property="og:description" content="Nuvo Store — Próximamente. Catálogo en línea en Costa Rica.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nuvostore.cr">
+<meta property="og:site_name" content="Nuvo Store">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{ --blue:#2456F3; --blue-deep:#1B45CC; --navy:#090061; --green:#77FF00; }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    font-family:"Inter Tight",-apple-system,BlinkMacSystemFont,sans-serif;
+    color:#fff; min-height:100dvh;
+    background:radial-gradient(135% 120% at 50% -10%, #3a6bff 0%, var(--blue) 48%, var(--blue-deep) 100%);
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;padding:40px 24px;position:relative;overflow:hidden;
+  }
+  .watermark{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;z-index:0;opacity:.05}
+  .watermark svg{width:min(115vw,115vh);height:auto}
+  .wrap{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;gap:24px;max-width:660px}
+  .wordmark{width:clamp(210px,42vw,360px);height:auto;filter:drop-shadow(0 16px 36px rgba(0,0,0,.22))}
+  .store{font-family:"Space Grotesk",sans-serif;font-weight:700;text-transform:uppercase;
+    letter-spacing:.42em;font-size:clamp(15px,3vw,22px);color:var(--green);margin-top:-4px;padding-left:.42em}
+  .soon{display:inline-flex;align-items:center;gap:10px;font-family:"Space Grotesk",sans-serif;font-weight:500;
+    font-size:clamp(14px,2.7vw,17px);color:#fff;border:1.5px solid rgba(255,255,255,.45);
+    padding:9px 20px;border-radius:999px;backdrop-filter:blur(2px)}
+  .soon .dot{width:9px;height:9px;border-radius:50%;background:var(--green);box-shadow:0 0 0 0 rgba(119,255,0,.6);animation:pulse 1.8s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(119,255,0,.5)}50%{opacity:.4;box-shadow:0 0 0 7px rgba(119,255,0,0)}}
+  .tagline{font-size:clamp(15px,3.3vw,18px);color:rgba(255,255,255,.85);max-width:32ch;line-height:1.55}
+  .actions{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:4px}
+  .btn{display:inline-flex;align-items:center;gap:9px;font-family:"Space Grotesk",sans-serif;font-weight:700;
+    font-size:16px;text-decoration:none;padding:13px 24px;border-radius:14px;transition:transform .15s,box-shadow .15s,border-color .15s,background .15s}
+  .btn svg{width:20px;height:20px;display:block}
+  .btn-wa{background:var(--green);color:var(--navy);box-shadow:0 10px 26px rgba(119,255,0,.30)}
+  .btn-wa:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(119,255,0,.45)}
+  .btn-ig{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.45)}
+  .btn-ig:hover{transform:translateY(-2px);border-color:#fff;background:rgba(255,255,255,.08)}
+  .chip{display:inline-flex;align-items:center;gap:9px;font-family:"Space Grotesk",sans-serif;font-weight:700;
+    font-size:16px;color:#fff;background:rgba(255,255,255,.08);border:1.5px solid rgba(255,255,255,.30);
+    padding:12px 22px;border-radius:14px}
+  .chip svg{width:20px;height:20px;display:block;color:var(--green)}
+  .chip em{font-style:normal;font-weight:500;color:var(--green);font-size:14px;letter-spacing:.03em}
+  footer{position:relative;z-index:1;margin-top:48px;font-size:13px;letter-spacing:.3px;color:rgba(255,255,255,.6);display:flex;flex-direction:column;gap:8px;align-items:center}
+  footer b{color:rgba(255,255,255,.85);font-weight:600}
+  .legal{display:flex;gap:16px;flex-wrap:wrap;justify-content:center}
+  .legal a{color:rgba(255,255,255,.8);text-decoration:none;font-weight:500}
+  .legal a:hover{color:#fff;text-decoration:underline}
+</style>
+</head>
+<body>
+  <div class="watermark" aria-hidden="true">
+    <svg viewBox="0 0 146.15 146.28" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" d="M118.26.2L29.97,0C13.02-.04.08,13.35.07,30.14L0,115.72c-.01,15.24,10.95,30.46,27.18,30.48l90.77.09c15.79.02,28.06-13.33,28.08-28.54l.12-88.33c.02-15.43-12.23-29.18-27.89-29.22ZM104.53,108.93l-21.36.02-.03-47.56c-.17-3.04-1.97-4.67-4.55-4.67h-11.11c-2.58.01-4.67,2.11-4.67,4.69v47.54s-16.38-.01-16.38-.01c-2.66,0-4.81-2.16-4.82-4.82v-48.44c0-10.13,8.21-18.34,18.34-18.33h21.48c8.91.02,17.21,5.05,20.9,13.17,1.07,2.36,1.79,4.92,2.1,7.61.09.76.11,1.52.11,2.29v48.53Z"/></svg>
+  </div>
+
+  <main class="wrap">
+    <svg class="wordmark" viewBox="0 0 375.49 143.86" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Nuvo"><rect x="3" y="3" width="369.49" height="137.86" rx="68.93" fill="#FFFFFF"/><g fill="#090061"><path d="M0,48.16C-.03,23.18,17.63,2.37,42.59.07,43.18.02,43.78,0,44.38,0l311.8.02c10.66,0,19.31,8.65,19.3,19.31l-.04,79.63c0,4.72-1.31,8.67-2.41,13.12-.25,1-.54,1.99-.95,2.93-7.23,16.72-23.61,28.75-42.58,28.76l-310.11.08c-10.65,0-19.3-8.63-19.31-19.28L0,48.16ZM339.79,86.79c2.33-9.69,2.26-19.87.04-29.58-2.21-9.65-8.91-16.75-18.34-19.76-10.44-3.32-21.85-3.22-32.29-.11-9.84,2.93-16.46,10.14-18.79,19.98-2.23,9.42-2.21,18.87-.27,28.46,2.02,10,9.07,17.85,19.07,20.81,19.12,5.68,45.3,2.23,50.59-19.81ZM80.29,60.23l.03,47.56,21.36-.02v-48.53c.01-.76,0-1.53-.1-2.29-.32-2.68-1.03-5.25-2.1-7.61-3.68-8.12-11.98-13.15-20.9-13.15h-21.48c-10.13-.02-18.34,8.19-18.34,18.32v48.44c0,2.66,2.16,4.82,4.82,4.82h16.39s0-47.53,0-47.53c0-2.58,2.09-4.67,4.67-4.67h11.11c2.59-.01,4.38,1.62,4.55,4.66ZM178.76,36.17l-21.1.04v47.67c-.59,2.55-2.47,4.88-5.11,4.89l-11.21.06c-3.52.02-5.95-3.07-6.13-6.56l-.07-46.08-21.23-.04.08,47.09c.01,6.7,2.63,13.5,7.35,18.11,8.33,8.14,25.63,8.48,37.29,6.57,6.74-1.1,12.91-4.53,16.54-10.21,2.56-4.01,3.09-8.72,3.62-13.46l-.03-48.08ZM243.74,36.24l-17.08,50.32-16.83-50.42-22.66.08,26.2,71.53h26.59s26.11-71.56,26.11-71.56l-22.33.05Z"/><path d="M311.7,88.81c-4.77.93-9.59.89-14.03-.16-9.46-2.23-12.08-14.23-9.58-23.59,2.07-7.76,9.06-11.09,16.66-11.02,6.67.06,13.21,1.9,16.22,8.38,2.02,4.34,1.93,9.58,1.36,14.42-.68,5.76-4.51,10.78-10.64,11.98Z"/></g></svg>
+    <div class="store">Store</div>
+
+    <div class="soon"><span class="dot"></span> Próximamente</div>
+    <p class="tagline">Estamos preparando nuestro catálogo en línea. Muy pronto en Costa Rica.</p>
+
+    <div class="actions">
+      <span class="chip" aria-label="WhatsApp muy pronto">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.2s-.8 1-1 1.2c-.2.2-.4.2-.7.1s-1.3-.5-2.4-1.5c-.9-.8-1.5-1.8-1.7-2.1s0-.5.2-.7c.2-.2.4-.4.5-.6.2-.2.2-.3.4-.6.1-.2 0-.4-.1-.6-.1-.2-.7-1.7-1-2.3s-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4s-1.1 1-1.1 2.5 1.1 2.9 1.3 3.1c.2.2 2.2 3.4 5.4 4.8 2.5 1.1 3 .9 3.6.8.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.7-.4zM12.1 2C6.5 2 2 6.5 2 12.1c0 1.7.5 3.4 1.3 4.9L2 22l5.1-1.3c1.4.8 3 1.2 4.7 1.2h.3c5.6 0 10.1-4.5 10.1-10.1S17.7 2 12.1 2z"/></svg>
+        WhatsApp <em>· muy pronto</em>
+      </span>
+    </div>
+  </main>
+
+  <footer>
+    <nav class="legal">
+      <a href="/privacidad.html">Privacidad</a>
+      <a href="/terminos.html">Términos</a>
+      <a href="/cookies.html">Cookies</a>
+    </nav>
+    <div>© 2026 <b>Nuvo Store</b> · Industrias de Computación Nacional S.A. · Costa Rica</div>
+  </footer>
+</body>
+</html>
